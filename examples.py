@@ -1,9 +1,9 @@
-from cuttlepy import CuttleClient
+import cuttlepy
 
-client = CuttleClient(
-    timeout=10,
+response = cuttlepy.get(
+    'https://httpbin.org/get',
+    timeout=15
 )
 
-response = client.get("https://httpbin.org/get")
 response.raise_for_status()
 print(response.status_code)
