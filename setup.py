@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("readme.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="cuttlepy",
-    version="0.1.2",
+    version="0.1.3",
     author="Chanpreet Singh",
     author_email="chanpreet3000@gmail.com",
     description="Typed python HTTP client wrapper for PRIMP",
