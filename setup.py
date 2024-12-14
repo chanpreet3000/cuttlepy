@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="cuttlepy",
-    version="0.1.3",
+    version="0.1.4",
     author="Chanpreet Singh",
     author_email="chanpreet3000@gmail.com",
     description="Typed python HTTP client wrapper for PRIMP",
