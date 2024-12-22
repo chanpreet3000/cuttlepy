@@ -1,5 +1,7 @@
-from typing import Any, Optional, Dict, Tuple, Union, List
+from typing import Any, Dict, List, Optional, Tuple, Union
+
 from primp import Client as PrimpClient
+
 from .response import CuttleResponse
 
 
@@ -28,8 +30,6 @@ class CuttleClient:
             max_redirects: int = 20,
             verify: bool = True,
             ca_cert_file: Optional[str] = None,
-            http1: Optional[bool] = None,
-            http2: Optional[bool] = None
     ):
         """
         Initialize a new CuttleClient instance.
@@ -49,8 +49,6 @@ class CuttleClient:
             max_redirects (int): Maximum number of redirects to follow.
             verify (bool): Whether to verify SSL certificates.
             ca_cert_file (Optional[str]): Path to a CA certificate file.
-            http1 (Optional[bool]): Whether to enable HTTP/1.1.
-            http2 (Optional[bool]): Whether to enable HTTP/2.
         """
         self._client = PrimpClient(
             auth=auth,
@@ -67,8 +65,6 @@ class CuttleClient:
             max_redirects=max_redirects,
             verify=verify,
             ca_cert_file=ca_cert_file,
-            http1=http1,
-            http2=http2
         )
 
     def get(
