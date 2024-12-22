@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cuttlepy"
+version = "0.2.1"
+authors = [
+    { name="Chanpreet Singh", email="chanpreet3000@gmail.com" },
+]
+description = "Typed python HTTP client wrapper for PRIMP"
+readme = "readme.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "primp==0.9.1",
+]
+keywords = ["http", "client", "wrapper", "primp", "requests", "httpx", "aiohttp"]
+
+[project.urls]
+"Homepage" = "https://github.com/chanpreet3000/cuttlepy"
+"Bug Tracker" = "https://github.com/chanpreet3000/cuttlepy/issues"
+"Source Code" = "https://github.com/chanpreet3000/cuttlepy"
